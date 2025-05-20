@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "UMD",
+    "jsx": "react",
+    "removeComments": true,
+    "target": "esnext",
+    "noImplicitAny": true,
+    "isolatedModules": true,
+    "noImplicitThis": true,
+    "moduleResolution":"node",
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": true,
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "declarationDir": "dist/types",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}
