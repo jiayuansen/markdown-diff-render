@@ -32,7 +32,7 @@ mdr.render(mardown)
 运行结果：
 
 ```html
-<div class="container">
+<div id="container">
     <div class="wrapper">
         <h1>Level 1 Heading</h1>
         <p>This is a paragraph</p>
@@ -55,7 +55,7 @@ new MDR(container[, { className, attrs, style, on, codeTheme }])
 | 参数名称  | 类型        | 是否必填 | 说明                                                         |
 | --------- | ----------- | -------- | ------------------------------------------------------------ |
 | container | HTMLElement | 是       | 用于放置渲染内容                                             |
-| className | string      | 否       |                                                              |
+| className | string      | 否       | 多个class name时应该用空格隔开，例如"classname1 classname2"  |
 | attrs     | object      | 否       | HTML元素[Attribute](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) |
 | style     | object      | 否       | css属性键值对                                                |
 | on        | object      | 否       | 事件监听器                                                   |

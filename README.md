@@ -34,7 +34,7 @@ mdr.render(markdown)
 Render output:
 
 ```html
-<div class="container">
+<div id="container">
     <div class="wrapper">
         <h1>Level 1 Heading</h1>
         <p>This is a paragraph</p>
@@ -57,7 +57,7 @@ new MDR(container[, { className, attrs, style, on, codeTheme }])
 | Parameter   | Type        | Required | Description |
 |-------------|-------------|----------|-------------|
 | container   | HTMLElement | Yes      | A html element where render result inserted into |
-| className   | string      | No       |             |
+| className   | string      | No       | Multiple class names should be separated by spaces, such as "classname1 classname2" |
 | attrs       | object      | No       | HTML element [attributes](https://developer.mozilla.org/en-US/docs/Glossary/Attribute) |
 | style       | object      | No       | CSS key-value pairs |
 | on          | object      | No       | Event listeners |
