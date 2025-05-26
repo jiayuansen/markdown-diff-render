@@ -33,6 +33,7 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         external: [],
       },
+      target: 'es2015'
     },
   } : {
     plugins,

@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "module": "UMD",
+    "module": "esnext",
     "jsx": "react",
     "removeComments": true,
-    "target": "esnext",
+    "target": "es2015",
     "noImplicitAny": true,
     "isolatedModules": true,
     "noImplicitThis": true,

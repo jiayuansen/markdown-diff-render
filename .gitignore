@@ -16,6 +16,7 @@ dist-ssr
 coverage
 *.local
 *.tgz
+.npmrc
 
 /cypress/videos/
 /cypress/screenshots/
