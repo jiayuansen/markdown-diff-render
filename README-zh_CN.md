@@ -44,6 +44,8 @@ mdr.render(mardown)
 </div>
 ```
 
+如果markdown文本发生了变化，再次调用`render`方法后，dom结构会自动更新。
+
 # 参数说明
 
 ## 构造函数
@@ -88,6 +90,8 @@ class MDR extends _MDR {
 ```
 
 本项目支持[highlight.js](https://github.com/highlightjs/highlight.js)提供的[官方主题](https://github.com/highlightjs/highlight.js/tree/main/src/styles)。
+
+**注意**：覆盖`highlight`方法后，类构造参数中的`codeTheme`配置项将会失效。
 
 # 浏览器支持
 

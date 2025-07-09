@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import styleInject from 'vite-plugin-style-inject'
 import dts from 'vite-plugin-dts'
+import babel from 'vite-plugin-babel';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -14,6 +15,11 @@ export default defineConfig(({ mode }) => {
       outDir: 'dist/types',
       tsconfigPath: './tsconfig.json',
     }),
+    babel({
+      babelConfig: {
+        plugins: ['babel-plugin-transform-object-hasown']
+      }
+    })
   ]
   const resolve = {
     alias: {

@@ -1,6 +1,6 @@
 {
   "name": "markdown-diff-render",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "author": "jiayuansen",
   "type": "module",
   "description": "A markdown renderer to enable incremental rendering of markdown to avoid issues such as repeated loading of image resources and other performance problems caused by full re-rendering.",
@@ -19,7 +19,7 @@
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build --mode lib && vite build --mode page && git add dist && git add page",
     "deploy": "gh-pages -d page"
   },
@@ -29,15 +29,17 @@
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-react": "^4.4.1",
+    "babel-plugin-transform-object-hasown": "^1.1.0",
     "gh-pages": "^6.3.0",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
+    "vite-plugin-babel": "^1.3.2",
     "vite-plugin-dts": "^4.5.4",
     "vite-plugin-style-inject": "^0.0.1"
   },
   "dependencies": {
     "highlight.js": "^11.11.1",
-    "markdown-diff-render": "file:../1-markdown-diff-render",
+    "markdown-diff-render": "file:../markdown-diff-render",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0",

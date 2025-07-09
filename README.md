@@ -46,6 +46,8 @@ Render output:
 </div>
 ```
 
+If the markdown content changes, the DOM structure will automatically update after calling the `render` method again.
+
 ## Parameters
 
 ### Constructor
@@ -90,6 +92,8 @@ class MDR extends _MDR {
 ```
 
 It supports the [official themes](https://github.com/highlightjs/highlight.js/tree/main/src/styles) provided by `highlight.js`.
+
+**Note**: After overriding the `highlight` method, the `codeTheme` configuration option in the class constructor will no longer take effect.
 
 ## Browser Support
 
