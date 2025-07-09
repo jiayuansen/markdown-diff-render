@@ -17562,7 +17562,7 @@ class Vg {
   constructor(t, n) {
     if (this.container = t, this.opt = n, !(t instanceof HTMLElement))
       throw new Error("Invalid argument: an HTML element is required for rendering.");
-    t.replaceChildren(), this.patch = Ig([
+    t.innerHTML = "", this.patch = Ig([
       Bg,
       Wg,
       Ug,
@@ -17573,7 +17573,7 @@ class Vg {
     t.append(r), this.oldVnode = Xn("div", this.props), this.patch(r, this.oldVnode), this.highlight();
   }
   render(t) {
-    if (!t || typeof t != "string")
+    if (typeof t != "string")
       throw new Error("Invalid argument: parameter is not a valid markdown text.");
     const n = this.mast(t);
     this.hast(n).then((r) => {

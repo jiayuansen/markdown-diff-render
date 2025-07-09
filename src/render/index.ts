@@ -29,7 +29,7 @@ class Render {
     if (container instanceof HTMLElement === false) {
       throw new Error("Invalid argument: an HTML element is required for rendering.")
     }
-    container.replaceChildren()
+    container.innerHTML = ''
     this.patch = init([
       classModule, styleModule,
       propsModule, attributesModule,
@@ -43,7 +43,7 @@ class Render {
   }
 
   render(markdown: string) {
-    if (!markdown || typeof markdown !== "string") {
+    if (typeof markdown !== "string") {
       throw new Error("Invalid argument: parameter is not a valid markdown text.")
     }
     const mast = this.mast(markdown)
