@@ -15,7 +15,7 @@ npm i markdown-diff-render
 # 使用示例
 
 ```javascript
-import MDR markdown-diff-render
+import MDR from 'markdown-diff-render'
 const container = document.querySelector("#container")
 const mdr = new MDR(container, { className: "wrapper"})
 const markdown = `
@@ -80,7 +80,7 @@ new MDR(container[, { className, attrs, style, on, codeTheme }])
 本项目使用[rehype-highlight](https://github.com/rehypejs/rehype-highlight)插件实现代码高亮功能，并且使用了[highlight.js](https://github.com/highlightjs/highlight.js)的github主题。如果你想更改主题，请重写highlight方法引入新的主题。
 
 ```javascript
-import _MDR markdown-diff-render
+import _MDR from 'markdown-diff-render'
 class MDR extends _MDR {
     highlight() {
         // import your code highlight theme here. Here's an example.
